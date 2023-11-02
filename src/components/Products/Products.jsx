@@ -15,7 +15,7 @@ const Products = () => {
           <Card.Body>
             <Card.Title><h4>Black T-Shirt</h4></Card.Title>
             <Card.Text>
-              <p>Price: $32.00</p>
+              Price: $32.00
             </Card.Text>
             <Button variant="primary">Go somewhere</Button>
           </Card.Body>

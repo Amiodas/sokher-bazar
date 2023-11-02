@@ -26,18 +26,16 @@ const Shop = () => {
         <Container>
           <Row>
             {products.map((product) => (
-              <Col lg="3" key={product.id}>
+              <Col lg="3" md="6" key={product.id}>
                 <Card style={{ width: "18rem", marginBottom: "40px" }}>
                   <Card.Img variant="top" src={product.image} />
                   <Card.Body>
                     <Card.Title>
                       <h4>{product.name}</h4>
                     </Card.Title>
-                    <Card.Text>
-                      <p>Price: ${product.price}</p>
-                    </Card.Text>
+                    <Card.Text>Price: ${product.price}</Card.Text>
                     <Link to={`/details/${product.id}`}>
-                      <Button variant="primary">Go somewhere</Button>
+                      <Button variant="primary">Details</Button>
                     </Link>
                   </Card.Body>
                 </Card>
